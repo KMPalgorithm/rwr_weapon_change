@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projectiles>
+	<!-- rather awkward place for this definition, but for now, that's the way it is -->
+	<!-- projectile itself defines its slot, 0 being actual throwables that can also equipped, thrown, bought and found -->
+	<projectile file="stielhandgranate.projectile"/>
+	<projectile file="panzerwurfmine.projectile"/>
+	<projectile file="strafing_run_shadow.projectile"/>
+	<projectile file="strafing_run.projectile"/>
+
+	<projectile file="mills_bomb_grenade.projectile"/>
+	<projectile file="mkii_grenade.projectile"/>
+	<projectile file="type97_grenade.projectile"/>
+	<projectile file="type99_at_mine.projectile" />
+	<projectile file="satchel.projectile" />
+	<projectile file="democharge.projectile" />
+	<projectile file="mk3_grenade.projectile" />											 
+	
+	<projectile file="m1_garand_grenade.projectile" />
+	<projectile file="type38_rifle_grenade.projectile" />
+	<projectile file="type38_rifle_at_grenade.projectile" />
+
+	<projectile file="kar98k_rifle_grenade_he.projectile" />
+	<projectile file="kar98k_rifle_grenade_at.projectile" />
+
+	<projectile file="m1903_at_grenade.projectile" />
+	<projectile file="m1903_rifle_grenade_he.projectile" />
+
+	<projectile file="smle_rifle_grenade_at.projectile" />
+	<projectile file="smle_rifle_grenade_he.projectile" />
+	
+	<projectile file="m1_bazooka_rocket.projectile" />
+	<projectile file="type4_rocket.projectile" />
+	
+	<projectile file="m4_cannon.projectile" />
+	<projectile file="m4_firefly_cannon.projectile" />
+	<projectile file="stuart_cannon.projectile" />
+	<projectile file="hago_cannon.projectile" />
+	<projectile file="5inch_gun.projectile" />
+	<projectile file="coastal_gun.projectile" />
+	<projectile file="panzer_iv_cannon.projectile" />
+	<projectile file="stug_iii_cannon.projectile" />
+	<projectile file="king_tiger_cannon.projectile" />
+	<projectile file="tiger_cannon.projectile" />
+
+
+	<projectile file="at_gun.projectile"/>
+
+	<projectile file="mortar_shell.projectile" />
+	<projectile file="light_mortar_shell.projectile" />
+	<projectile file="heavy_mortar_shell.projectile" />
+	<projectile file="rocket_mortar.projectile" />
+	<projectile file="artillery_shell.projectile" />
+	<projectile file="naval_artillery_shell.projectile" />
+		
+	<projectile file="air_strike_rocket.projectile" />
+	<projectile file="air_strike_bomb.projectile" />
+	
+	<projectile file="naval_mine.projectile" />
+	
+	<projectile file="debri_stun.projectile" />
+	<projectile file="debri_stun_medium.projectile" />
+	<projectile file="debri_stun_big.projectile" />
+	<projectile file="debri_destroy_big.projectile" />
+	<projectile file="debri_destroy_small.projectile" />  
+	
+	<projectile file="m18_recoilless_rifle_shell.projectile" />
+	<projectile file="m18_recoilless_rifle_shell_willys.projectile" />
+
+	<projectile file="flare.projectile" />
+ 	<projectile file="flare_checkpoint.projectile" />
+ 	<projectile file="repair_tank_crane.projectile" />    
+    <projectile file="p47_shadow.projectile" />
+
+</projectiles>

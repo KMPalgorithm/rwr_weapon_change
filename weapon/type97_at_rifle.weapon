@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<weapon file="base_primary_heavy_bipod.weapon" key="type97_at_rifle.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="1.0" player_death_drop_owner_lock_time="30.0" >
+	<tag name="bazooka" />
+	
+<access_tag name="pacific" />
+
+	<specification  
+	retrigger_time="0.7"  
+	accuracy_factor="0.8" 
+	sustained_fire_grow_step="6.5" 
+	magazine_size="7" 
+	can_shoot_standing="0" 
+	can_shoot_crouching="0" 
+	suppressed="0" 
+	name="Type 97 Anti-Tank Rifle" 
+	class="4" 
+	burst_shots="1" 
+	reload_one_at_a_time="0" 
+	projectile_speed="200.0" 
+	barrel_offset="0.9" 
+	projectiles_per_shot="1"
+	/>
+
+	<!-- Scoring for target priority. Distance is between 0 and 1 based on range; direction is between 0 and 1 based on whether its near the barrel; squad_command is between 0 and on based on how close to the player's command order is, and base_score is a weight.. -->
+	<!-- These all add together and the highest 'score' is the new target, targets are rescanned every 2.5 seconds to see if a new higher-score target is in sight-range. -->
+	<!-- You must define a blank tag at the top of the list to handle all cases where the vehicle is fighting something "undefined", which is what common infantry might best fit under. -->
+    <target_factors tag="" distance="1.0" direction="0.0" squad_command="1.0" base_score="0.5" />
+    <target_factors tag="heavy_armour" distance="1.0" direction="0.0" squad_command="1.0" base_score="0.0" />	<!-- Heavy Armour is low because Rifle Grenades can't hurt them much at all -->
+    <target_factors tag="medium_armour" distance="1.0" direction="0.0" squad_command="1.0" base_score="2.0" />  <!-- Medium Armour is low because Rifle Grenades can't hurt them much at all -->
+    <target_factors tag="light_armour" distance="1.0" direction="0.0" squad_command="1.0" base_score="9.0" />	<!-- barely below Medium Armour so that it becomes higher priority in short range if medium armour is far away. -->
+    <target_factors tag="at_gun" distance="1.0" direction="0.0" squad_command="1.0" base_score="4.0" />
+    <target_factors tag="light_at_gun" distance="1.0" direction="0.0" squad_command="1.0" base_score="4.0" />
+    <target_factors tag="light_vehicle" distance="1.0" direction="0.0" squad_command="1.0" base_score="10.0" />
+    <target_factors tag="defensive_weapon" distance="1.0" direction="0.0" squad_command="1.0" base_score="7.0" />
+
+	<stance state_key="standing" accuracy="0.95" />
+	<stance state_key="crouching" accuracy="0.95" />
+	<stance state_key="over_wall" accuracy="0.95" />     
+	
+    <animation key="recoil" ref="27" />
+    <animation key="reload" animation_key="reloading, type 97 at rifle" />
+    <animation key="reload" stance_key="prone" animation_key="reloading, type 97 at rifle, prone" />
+    <animation key="hold" ref="32" />
+    <animation key="hold_on_wall" ref="1" />
+    <animation key="walking" ref="31" />
+    <animation key="running" animation_key="running, lahti_l39" />
+	
+	<weak_hand_hold offset="0.5" />
+
+    <sound key="fire" fileref="anti_tank_rifle.wav" volume="2.8" pitch_variety="0.05" />
+    <sound key="cycle" fileref="rifle_chamber.wav" />
+    <sound key="magazine_out" fileref="rifle_clip_out.wav" />
+    <sound key="magazine_in" fileref="rifle_clip_in.wav" />
+	
+	<model filename="type97_antitank.xml" />
+	<hud_icon filename="hud_type97_at.png" />
+	
+	<commonness value="0.0175" can_respawn_with="0"/>
+	<inventory encumbrance="26.0" price="150.0" />
+	
+	<capacity value="0" source="rank" source_value="0.0" />
+	<capacity value="1" source="rank" source_value="0.0" />
+	
+	<projectile file="type97_at_rifle.projectile">
+	</projectile>
+	
+	<modifier class="speed" value="-0.175" />
+	
+</weapon>

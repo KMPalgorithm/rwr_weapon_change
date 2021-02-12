@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<weapon file="base_primary_carbine_smg.weapon" key="m3_greasegun.weapon">
+
+<access_tag name="edelweiss" />
+
+	<specification 
+	retrigger_time="0.13" 
+	accuracy_factor="0.92" 
+	sustained_fire_grow_step="0.29" 
+	magazine_size="30" 
+	can_shoot_standing="1" 
+	suppressed="0" 
+	name="M3 'Greasegun'" 
+	class="0" 
+	projectile_speed="91.0"
+	/>
+	
+	<!-- former stats: grow_step 0.31, diminish rate default, kill probability 0.675, kill decay start 0.18 -->
+
+	<!-- certain weapons like the MP 40 and StG 44 have reduced prone accuracy, due to the height of the weapon with magazine colliding with the ground. -->
+	<stance state_key="prone" accuracy="0.825" />
+
+	<animation key="recoil" ref="12" />
+	<animation key="recoil" ref="13" />
+	<animation key="recoil" ref="14" />
+	<animation key="reload" animation_key="reloading, mp40" />
+	<animation key="reload" stance_key="prone" animation_key="reloading, mp40, prone" />
+	
+	<weak_hand_hold offset="0.2" />
+	
+	<sound key="fire" fileref="weapon_smg_m3_greasegun.wav" pitch_variety="0.05" volume="1.1"/>
+	<sound key="magazine_out" fileref="rifle_clip_out.wav" />
+	<sound key="magazine_in" fileref="rifle_clip_in.wav" />
+	<sound key="cycle" fileref="rifle_chamber.wav" />
+	
+	<model filename="weapon_m3_greasegun.xml" />
+	<hud_icon filename="hud_m3_smg.png" />
+	
+	<commonness value="0.075" />
+	<inventory encumbrance="10.0" price="10.0" />
+	
+	<capacity value="0" source="rank" source_value="0.0" />
+	<capacity value="1" source="rank" source_value="0.0" />
+	
+	<projectile file="bullet.projectile">
+		<result
+		class="hit"
+		kill_probability="0.675"
+		kill_decay_start_time="0.18"
+		kill_decay_end_time="0.55"
+		/>
+	</projectile>
+	
+</weapon>

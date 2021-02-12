@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<weapon file="base_primary_carbine_smg.weapon" key="type_be_b.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="1.0" player_death_drop_owner_lock_time="45.0">
+	<tag name="assault" />
+	<tag name="has_bayonet" />
+
+<access_tag name="pacific" />
+
+	<specification 
+	retrigger_time="0.1" 
+	accuracy_factor="0.9" 
+	sustained_fire_grow_step="0.26" 
+	magazine_size="50" 
+	can_shoot_standing="1" 
+	suppressed="0" 
+	name="Type BE Bayonet" 
+	class="0" 
+	projectile_speed="100.0"
+    stab_enabled="1"
+    range="3.5"
+	/>
+
+	<next_in_chain key="type_be.weapon" share_ammo="1" />
+	<stance state_key="standing" accuracy="0.81" />
+	<stance state_key="crouching" accuracy="0.83" />
+
+	<!-- the Japanese-contract "MP 18" in 7.63mm Mauser. -->
+	<!-- statistically same as the Type STE (MP 34) since they're very similar in design, and same caliber. -->
+	<!-- magazine capacity is 50 rounds though. -->
+	
+	<animation key="recoil" ref="12" />
+	<animation key="recoil" ref="13" />
+	<animation key="recoil" ref="14" />
+	<animation state_key="reload" animation_key="reloading, type 100" />
+	<animation state_key="reload" stance_key="prone" animation_key="reloading, type 100, prone" />
+	<animation state_key="stabbing"	animation_key="melee, bayonet" />
+	
+	<weak_hand_hold offset="0.2" />
+	
+	<sound key="fire" fileref="smg_05_s1-100.wav" pitch_variety="0.05" volume="1.34"/>
+	<sound key="magazine_out" fileref="rifle_clip_out.wav" />
+	<sound key="magazine_in" fileref="rifle_clip_in.wav" />
+	<sound key="cycle" fileref="rifle_chamber.wav" />
+	<sound key="stab" fileref="grenade_throw1.wav" pitch_variety="0.05" volume="0.5"/>
+	
+	<model filename="weapon_type_be_b.xml" />
+	<hud_icon filename="hud_type_be_b.png" />
+
+	<commonness value="0.1" can_respawn_with="0"/>
+	<inventory encumbrance="10.0" price="100.0"/>
+	
+	<capacity value="0" source="rank" source_value="0.0" />
+	<capacity value="1" source="rank" source_value="0.0" />
+	
+	<projectile file="bullet.projectile">
+		<result
+		class="hit"
+		kill_probability="0.525"
+		kill_decay_start_time="0.195"
+		kill_decay_end_time="0.5"
+		/>
+	</projectile>
+	
+</weapon>

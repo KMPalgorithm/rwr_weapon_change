@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<projectile class="bullet" name="aa gun" slot="1" time_to_live="2.0" radius="2.0" pulldown_in_air="4" key="aa_gun_flak_20mm.projectile">
+	
+	<sound class="result" key="other" fileref="ricochet_b1.wav" />
+	<sound class="result" key="terrain" copy="other" />
+	<sound class="result" key="vehicle" copy="other" />
+	<sound class="result" key="static_object" copy="other" />
+	
+	<trigger class="impact" />
+	<result
+	class="blast"
+	radius="1.65"
+	damage="1.0"
+	push="0.2"
+	decal="0"
+        damage_origin_vehicle="0" 
+	/>
+	
+	<model mesh_filename="40mm.mesh" texture_filename="40mm.png" />
+	
+	<rotation class="motion" />
+	
+	<effect class="result" key="other" ref="Burst" use_surface_color="1" />
+	<effect class="result" key="other" ref="LowDust"/>
+	
+	<effect class="result" key="terrain" ref="Burst" use_surface_color="1" />
+	<effect class="result" key="terrain" ref="LowDust" />
+	<effect class="result" type="splat_map" surface_tag="" size="1.0" atlas_index="0" layer="1" />
+	<effect class="result" type="splat_map" surface_tag="" size="1.0" atlas_index="4" layer="0" />
+	
+	<effect class="result" key="vehicle" ref="Burst" use_surface_color="1" />
+	<effect class="result" key="vehicle" ref="LowDust" />
+	<effect class="result" key="static_object" ref="Burst" use_surface_color="1" />
+	<effect class="result" key="static_object" ref="LowDust" />
+
+	<effect class="result" key="character" copy="terrain" />
+
+	
+	<trail probability="1.0" />
+	
+</projectile>

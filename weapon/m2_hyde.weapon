@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<weapon file="base_primary_carbine_smg.weapon" key="m2_hyde.weapon">
+
+	<access_tag name="edelweiss" />
+
+	<specification 
+	retrigger_time="0.1" 
+	accuracy_factor="0.92" 
+	sustained_fire_grow_step="0.21" 
+	magazine_size="30" 
+	can_shoot_standing="1" 
+	suppressed="0" 
+	name="M2 Hyde" 
+	class="0" 
+	projectile_speed="93.0"
+	barrel_offset="0.5" 
+	/>
+	
+	<animation key="recoil" ref="12" />
+	<animation key="recoil" ref="13" />
+	<animation key="recoil" ref="14" />
+	<animation key="reload" animation_key="reloading, m1a1 thompson" />
+	<animation key="reload" stance_key="prone" animation_key="reloading, m1a1 thompson, prone" />
+	
+	<weak_hand_hold offset="0.2" />
+	
+	<sound key="fire" fileref="weapon_smg_m2_hyde.wav" pitch_variety="0.05" volume="1.88"/>	<!-- was 1.9 with old sound -->
+	<sound key="magazine_out" fileref="rifle_clip_out.wav" />
+	<sound key="magazine_in" fileref="rifle_clip_in.wav" />
+	<sound key="cycle" fileref="rifle_chamber.wav" />
+	
+	<model filename="weapon_m2_hyde_smg.xml" />
+	<hud_icon filename="hud_m2_hyde.png" />
+	
+	<commonness value="0.135" can_respawn_with="0"/>
+	<inventory encumbrance="10.0" price="250.0" />
+	
+	<capacity value="0" source="rank" source_value="0.0" />
+	<capacity value="1" source="rank" source_value="0.0" />
+	
+	<projectile file="bullet.projectile">
+		<result
+		class="hit"
+		kill_probability="0.635"
+		kill_decay_start_time="0.22"
+		kill_decay_end_time="0.54"
+		/>
+	</projectile>
+	
+</weapon>

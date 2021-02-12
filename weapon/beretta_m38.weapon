@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<weapon file="base_primary_carbine_smg.weapon" key="beretta_m38.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="1.0" player_death_drop_owner_lock_time="30.0">
+
+<access_tag name="edelweiss" />
+
+	<specification 
+	retrigger_time="0.09" 
+	accuracy_factor="0.875" 
+	sustained_fire_grow_step="0.21" 
+	sustained_fire_diminish_rate="1.6"
+	magazine_size="40" 
+	can_shoot_standing="1" 
+	suppressed="0" 
+	name="Beretta M38" 
+	class="0" 
+	projectile_speed="102.0"
+	/>
+
+	<!-- there is photographic evidence of the Beretta in German use in Normandy, with one photo showing a section of men where atleast 2 are armed with it -->
+	<!-- they are possibly Italian volunteers in the 736th division, but they still wear German uniforms and are under German command -->
+	<!-- so here is the weapon - highly reknowned as one of the best, if not THE best, SMG of the war -->
+	<!-- it has extremely low recoil, good weight, moderately good magazine size, acceptable rate of fire, fires a decent cartridge, is reliable and comfortable. -->
+	<!-- it has been given very good stats but will be quite rare.
+
+	<!-- certain weapons like the MP 40 and StG 44 have reduced prone accuracy, due to the height of the weapon with magazine colliding with the ground. -->
+	<stance state_key="prone" accuracy="0.825" />
+
+	<animation key="recoil" ref="12" />
+	<animation key="recoil" ref="13" />
+	<animation key="recoil" ref="14" />
+	<animation state_key="reload" animation_key="reloading, mp40" />
+	<animation state_key="reload" stance_key="prone" animation_key="reloading, mp40, prone" />
+	
+	<weak_hand_hold offset="0.2" />
+	
+	<sound key="fire" fileref="weapon_smg_beretta_m38.wav" pitch_variety="0.04" volume="1.68"/>
+	<sound key="magazine_out" fileref="rifle_clip_out.wav" />
+	<sound key="magazine_in" fileref="rifle_clip_in.wav" />
+	<sound key="cycle" fileref="rifle_chamber.wav" />
+	
+	<model filename="weapon_beretta_m38.xml" />
+	<hud_icon filename="hud_beretta_m38.png" />
+
+	<commonness value="0.072" can_respawn_with="0"/>
+	<inventory encumbrance="10.0" price="400.0"/>
+	
+	<capacity value="0" source="rank" source_value="0.0" />
+	<capacity value="1" source="rank" source_value="0.0" />
+	
+	<projectile file="bullet.projectile">
+		<result
+		class="hit"
+		kill_probability="0.535"
+		kill_decay_start_time="0.35"
+		kill_decay_end_time="0.49"
+		/>
+	</projectile>
+	
+</weapon>

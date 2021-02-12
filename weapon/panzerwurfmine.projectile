@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projectile class="grenade" name="Panzerwurfmine" key="panzerwurfmine.projectile" slot="0" radius="0.15" drop_count_factor_on_death="0.3" on_ground_up="0 1 0">
+	<tag name="antitank_grenade" />
+	
+	<sound class="result" key="other" fileref="at_grenade_01.wav" volume="1.9" pitch_variety="0.1"/>  
+	<sound class="result" key="other" fileref="at_grenade_02.wav" volume="1.9" pitch_variety="0.1"/>  
+	
+	<sound class="result" key="terrain" copy="other" />
+	<sound class="result" key="static_object" copy="other" />
+	<sound class="result" key="vehicle" copy="other" />
+	<sound class="result" key="character" copy="other" />
+
+	<!-- unlike most AT grenades, the Panzerwurfmine uses an impact detonation instead of timed, but has a smaller radius -->
+	<!-- this is primarily to balance it weaker against Infantry, but not having an impact on its performance against tanks. -->
+	
+    <trigger class="impact" />
+	<result
+	class="blast"
+	radius="2.35"
+	damage="4.4"
+	push="0.4"
+	decal="1" />
+	
+	<model mesh_filename="weapon_panzerwurfmine.xml" />
+	<hud_icon filename="hud_panzerwurfmine.png" />
+	
+    <rotation class="motion" />
+    <throwable 
+	curve_height="5.0" 
+	near_far_distance="5.0" 
+	speed_estimation_near="9.0" 
+	speed_estimation_far="17.0" 
+	max_speed="14.0" 
+	randomness="0.06" 
+	tweak_factor="1.1" />
+	
+    <commonness value="0.35" />
+    <inventory encumbrance="5.0" price="2.0" />
+	
+    <capacity value="0" source="rank" source_value="0.0" />
+    <capacity value="2" source="rank" source_value="0.025" />
+    <capacity value="3" source="rank" source_value="0.2" />
+    <capacity value="4" source="rank" source_value="0.4" />
+	
+    	<effect class="result" key="terrain" ref="HandGrenadeSmokeTop" post_processing="1" />
+    	<effect class="result" key="terrain" ref="HandGrenadeSmoke" post_processing="1" />
+    	<effect class="result" key="terrain" ref="ShadowSmoke" shadow="1" />
+	<effect class="result" type="splat_map" surface_tag="" size="3.0" atlas_index="0" layer="1" />
+	<effect class="result" type="splat_map" surface_tag="" size="4.0" atlas_index="4" layer="0" />
+	<effect class="result" type="splat_map" surface_tag="" size="5.0" atlas_index="0" layer="2" additive="0" /> <!-- remove top snow everywhere -->
+	
+   	<effect class="result" key="other" ref="HandGrenadeSmokeTop" post_processing="1" />
+    	<effect class="result" key="other" ref="HandGrenadeSmoke" post_processing="1" />
+    	<effect class="result" key="other" ref="ShadowSmoke" shadow="1" />
+	
+	<effect class="result" key="static_object" copy="terrain" />
+	<effect class="result" key="vehicle" copy="terrain" />
+	<effect class="result" key="character" copy="terrain" />
+	
+</projectile>

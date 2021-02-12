@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<projectile class="grenade" name="rifle grenade" slot="1" pulldown_in_air="4" key="m1903_at_grenade.projectile">
+ 	
+    <sound class="result" key="other" fileref="mortar_01.wav" volume="2.35" pitch_variety="0.1"/>
+    <sound class="result" key="other" fileref="mortar_02.wav" volume="2.35" pitch_variety="0.1"/>
+    <sound class="result" key="other" fileref="mortar_03.wav" volume="2.35" pitch_variety="0.1"/>
+	
+    <sound class="result" key="terrain" copy="other" />
+    <sound class="result" key="static_object" copy="other" />
+    <sound class="result" key="vehicle" copy="other" />
+    <sound class="result" key="character" copy="other" />
+	
+	<!-- radius was 2.0; reduced since it was often killing all of a halftrack's passengers in one shot. -->
+    <trigger class="impact" />
+	<result
+	class="blast"
+	radius="1.85"
+	damage="2.3"
+	push="0.75"
+	decal="1" />
+	
+    <model filename="m1903_rifle_at_grenade.xml" />
+	
+    <rotation class="motion" />
+	
+    <commonness value="0.2" />
+	
+   	<effect class="result" key="terrain" ref="HandGrenadeSmokeTop" post_processing="1" />
+    <effect class="result" key="terrain" ref="HandGrenadeSmoke" post_processing="1" />
+    <effect class="result" key="terrain" ref="ShadowSmoke" shadow="1" />
+	
+   	<effect class="result" key="vehicle" ref="HitTank" lighting="1" />
+   	<effect class="result" key="vehicle" ref="HitTankSparks" />
+    <effect class="result" key="vehicle" ref="SmokeBurst" post_processing="1" />  
+    <effect class="result" key="vehicle" ref="BurstShine" lighting="0" />
+    <effect class="result" key="vehicle" ref="Godray" lighting="0" />
+	
+   	<effect class="result" key="other" ref="HandGrenadeSmokeTop" post_processing="1" />
+    <effect class="result" key="other" ref="HandGrenadeSmoke" post_processing="1" />
+    <effect class="result" key="other" ref="ShadowSmoke" shadow="1" />
+	
+	<effect class="result" key="static_object" copy="terrain" />
+	<effect class="result" key="character" copy="terrain" />
+	
+	<effect class="result" type="splat_map" surface_tag="" size="3.0" atlas_index="0" layer="1" />
+	<effect class="result" type="splat_map" surface_tag="" size="4.0" atlas_index="4" layer="0" />
+	<effect class="result" type="splat_map" surface_tag="" size="5.0" atlas_index="0" layer="2" additive="0" /> <!-- remove top snow everywhere -->
+	
+    <effect class="activated" ref="Propulsion_gl" />
+	
+</projectile>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<weapon file="base_primary_carbine_smg.weapon" key="sterling_smg.weapon">
+
+<access_tag name="edelweiss" />
+
+	<specification 
+	retrigger_time="0.09" 
+	accuracy_factor="0.875" 
+	sustained_fire_grow_step="0.19" 
+	magazine_size="32" 
+	can_shoot_standing="1" 
+	suppressed="0" 
+	name="Sterling" 
+	class="0" 
+	projectile_speed="100.0"
+	/>
+
+	<!-- Sterling is a bullpup, very short; moving accuracy is better -->
+	<stance state_key="running" accuracy="0.575" />
+	<stance state_key="walking" accuracy="0.725" />
+	<stance state_key="crouch_moving" accuracy="0.725" />
+	<stance state_key="prone_moving" accuracy="0.725" />
+	
+	<animation key="recoil" ref="12" />
+	<animation key="recoil" ref="13" />
+	<animation key="recoil" ref="14" />
+	<animation state_key="reload" animation_key="reloading, sten" />
+	<animation state_key="reload" stance_key="prone" animation_key="reloading, sten, prone" />
+	
+	<weak_hand_hold offset="0.2" />
+	
+	<sound key="fire" fileref="weapon_smg_sterling.wav" pitch_variety="0.05" volume="1.4"/>
+	<sound key="magazine_out" fileref="rifle_clip_out.wav" />
+	<sound key="magazine_in" fileref="rifle_clip_in.wav" />
+	<sound key="cycle" fileref="rifle_chamber.wav" />
+	
+	<model filename="weapon_sterling.xml" />
+	<hud_icon filename="hud_sterling_smg.png" />
+
+	<commonness value="0.12" can_respawn_with="0"/>
+	<inventory encumbrance="10.0" price="150.0"/>
+	
+	<capacity value="0" source="rank" source_value="0.0" />
+	<capacity value="1" source="rank" source_value="0.0" />
+	
+	<projectile file="bullet.projectile">
+		<result
+		class="hit"
+		kill_probability="0.535"
+		kill_decay_start_time="0.35"
+		kill_decay_end_time="0.5"
+		/>
+	</projectile>
+	
+</weapon>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<weapon file="base_primary_carbine_smg.weapon" key="sten_mkv_b.weapon">
+	<tag name="assault" />
+	<tag name="has_bayonet" />
+
+<access_tag name="edelweiss" />
+
+	<specification 
+	retrigger_time="0.1" 
+	accuracy_factor="0.875" 
+	sustained_fire_grow_step="0.31" 
+    	sustained_fire_diminish_rate="1.75" 
+	magazine_size="32" 
+	can_shoot_standing="1" 
+	suppressed="0" 
+	name="Sten Mk V Bayonet" 
+	class="0" 
+	projectile_speed="95.0"
+    stab_enabled="1"
+    stab_range="3.2"
+	/>
+
+	<next_in_chain key="sten_mkv.weapon" share_ammo="1" />
+	<stance state_key="standing" accuracy="0.81" />
+	<stance state_key="crouching" accuracy="0.83" />
+	
+	<animation key="recoil" ref="12" />
+	<animation key="recoil" ref="13" />
+	<animation key="recoil" ref="14" />
+	<animation state_key="reload" animation_key="reloading, sten" />
+	<animation state_key="reload" stance_key="prone" animation_key="reloading, sten, prone" />
+	<animation state_key="stabbing"	animation_key="melee, bayonet" />
+	
+	<weak_hand_hold offset="0.2" />
+	
+	<sound key="fire" fileref="weapon_smg_sten_mkv.wav" pitch_variety="0.05" volume="1.1"/>
+	<sound key="stab" fileref="grenade_throw1.wav" pitch_variety="0.05" volume="0.5"/>
+	<sound key="magazine_out" fileref="rifle_clip_out.wav" />
+	<sound key="magazine_in" fileref="rifle_clip_in.wav" />
+	<sound key="cycle" fileref="rifle_chamber.wav" />
+	
+	<model filename="weapon_sten_mkv_bayonet.xml" />
+	<hud_icon filename="hud_sten_mkv_b.png" />
+
+	<commonness value="0.075" can_respawn_with="1" in_stock="0"/>
+	<inventory encumbrance="10.0" price="15.0"/>
+	
+	<capacity value="0" source="rank" source_value="0.0" />
+	<capacity value="1" source="rank" source_value="0.0" />
+	
+	<projectile file="bullet.projectile">
+		<result
+		class="hit"
+		kill_probability="0.535"
+		kill_decay_start_time="0.2"
+		kill_decay_end_time="0.53"
+		/>
+	</projectile>
+	
+</weapon>
