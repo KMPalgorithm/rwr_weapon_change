@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projectile class="grenade" name="gunship HMG" slot="1" pulldown_in_air="0" key="gunship_25mm.projectile">
+    <result class="spawn" instance_class="projectile" instance_key="gunship_25mm_blast.projectile" min_amount="1" max_amount="1" offset="0 0 0" position_spread="0 0" direction_spread="0 0" />
+    <trigger class="impact" />
+    <rotation class="motion" />
+
+    <model mesh_filename="paw20_round.xml" />
+	
+    <trail probability="1.0" />
+
+</projectile>

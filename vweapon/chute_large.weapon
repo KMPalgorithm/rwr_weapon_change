@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weapon key="chute_large.weapon">
+
+    <model mesh_filename="chute_large.mesh" texture_filename="chute.png" />
+
+</weapon>

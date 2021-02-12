@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projectile class="grenade" name="gunship cannon" slot="1" pulldown_in_air="0.0" radius="0.4" key="gunship_105mm.projectile">
+    <tag name="rocket"/>
+    <result class="spawn" instance_class="projectile" instance_key="gunship_105mm_blast.projectile" min_amount="1" max_amount="1" offset="0 0 0" position_spread="0 0" direction_spread="0 0" />
+    <trigger class="impact" />
+    <rotation class="motion" />
+    <model mesh_filename="mortar_shell.xml" />
+
+    <commonness value="0.0" />
+
+    <effect class="activated" ref="Propulsion" />
+
+</projectile>
