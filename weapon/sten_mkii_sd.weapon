@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<weapon file="base_primary_carbine_smg.weapon" key="sten_mkii_sd.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="0.05" drop_count_factor_on_player_death ="1.0" player_death_drop_owner_lock_time="45.0">
+<weapon file="base_primary_carbine_smg.weapon" key="sten_mkii_sd.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="0.2" drop_count_factor_on_player_death ="1.0" player_death_drop_owner_lock_time="45.0">
 
 <access_tag name="edelweiss" />
 
@@ -17,6 +17,7 @@
 	barrel_offset="0.4"
 	/>
 
+	<!-- former stats: drop chance 0.05 -->
 	<!-- the Sten  MK IIS was often fired with subsonic ammunition, which has lower velocity. -->
 
 	<!-- Sten Mk II sights are absolutely atrocious, accuracy while standing, crouched, and prone have been reduced (but not while moving.) -->

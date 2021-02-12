@@ -47,6 +47,5 @@
 	<effect class="result" type="splat_map" surface_tag="" size="5.0" atlas_index="0" layer="2" additive="0" /> <!-- remove top snow everywhere -->
 	
 	<effect class="activated" ref="Propulsion_rocket" />
-	<effect class="activated" ref="RocketFlame" />
 	
 </projectile>

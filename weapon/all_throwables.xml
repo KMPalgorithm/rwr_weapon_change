@@ -33,6 +33,7 @@
 	
 	<projectile file="m4_cannon.projectile" />
 	<projectile file="m4_firefly_cannon.projectile" />
+	<projectile file="tog2_cannon.projectile" />
 	<projectile file="stuart_cannon.projectile" />
 	<projectile file="hago_cannon.projectile" />
 	<projectile file="5inch_gun.projectile" />

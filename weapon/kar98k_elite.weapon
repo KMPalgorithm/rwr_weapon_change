@@ -7,14 +7,14 @@
 	<specification 
 	retrigger_time="-1.0" 
 	accuracy_factor="0.99" 
-	sustained_fire_grow_step="3.5" 
+	sustained_fire_grow_step="4.0" 
 	magazine_size="20" 
 	can_shoot_standing="1" 
 	suppressed="0" 
 	name="Karabiner 98k - Hi-Grade" 
 	class="2" 
 	reload_one_at_a_time="1" 
-	projectile_speed="145.0" 
+	projectile_speed="140.0" 
 	barrel_offset="0.5" 
 	projectiles_per_shot="1"
 	sight_range_modifier="1.45"
@@ -56,9 +56,9 @@
 	<projectile file="bullet.projectile">
 		<result
 		class="hit"
-		kill_probability="1.0"
+		kill_probability="1.125"
 		kill_decay_start_time="0.65"
-		kill_decay_end_time="0.69"
+		kill_decay_end_time="0.71"
 		/>
 	</projectile>
 	

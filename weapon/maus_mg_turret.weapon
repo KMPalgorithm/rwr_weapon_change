@@ -36,7 +36,7 @@
 	<sound class="operation" key="fire" fileref="weapon_mg_mg34.wav" pitch_variety="0.05" volume="1.75"/>
 	
 	<model mesh_filename="" texture_filename="" />
-	<hud_icon filename="hud_tank_mg.png" />
+	<hud_icon filename="hud_mg34_assault.png" />
 	
 	<inventory encumbrance="11.0" price="2.0" />
 	<commonness value="0.0" />

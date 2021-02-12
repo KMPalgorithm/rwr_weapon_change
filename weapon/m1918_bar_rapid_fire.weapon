@@ -18,7 +18,7 @@
 	projectile_speed="91.0"
 	/>
 	
-	<!-- former stats: grow_step 0.195 crouching accuracy 0.9-->
+	<!-- former stats: velocity 91 -->
 
 	<!-- BAR is a low-capacity, low-rate of fire weapon which offers high accuracy and moderate damage. -->
 	<!-- It suffers a long reload, but is effective at long ranges when fired from Crouch, Prone, or over Walls. -->
@@ -58,7 +58,7 @@
 		class="hit"
 		kill_probability="0.575"
 		kill_decay_start_time="0.225"
-		kill_decay_end_time="0.55"
+		kill_decay_end_time="0.84"
 		/>
 	</projectile>
 	

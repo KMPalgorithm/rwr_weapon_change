@@ -22,7 +22,7 @@
 
 	<stance state_key="standing" accuracy="0.89" />
 	<stance state_key="crouching" accuracy="0.97" />
-	<stance state_key="over_wall" accuracy="0.97" />
+	<!--<stance state_key="over_wall" accuracy="0.97" />-->
 	
 	<!-- was 0.75 diminish rate -->
 

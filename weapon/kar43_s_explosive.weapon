@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<weapon file="base_primary_sniper.weapon" key="kar43_s_explosive.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="0.5" drop_count_factor_on_player_death ="1.0" player_death_drop_owner_lock_time="30.0" >
+<weapon file="base_primary_sniper.weapon" key="kar43_s_explosive.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="1.0" drop_count_factor_on_player_death ="1.0" player_death_drop_owner_lock_time="30.0" >
     <tag name="sniper" />
 
 <access_tag name="edelweiss" />
@@ -35,7 +35,7 @@
 	<!-- the Kar43 is one of the rare weapons that has a unique sound for its sniper variant, since the 3D model is very hard to tell apart when held by a soldier. -->
 	<sound key="fire" fileref="weapon_rifle_kar43_sniper.wav" pitch_variety="0.05" volume="1.83"/>
     	<sound key="reload_one" fileref="park_off.wav" />
-	<sound key="magazine_out" fileref="type4_garand_clip_out.wav" />
+	<sound key="magazine_out" fileref="rifle_clip_out.wav" />
 	<sound key="magazine_in" fileref="rifle_clip_in.wav" />
 	<sound key="cycle" fileref="rifle_chamber.wav" />
 	

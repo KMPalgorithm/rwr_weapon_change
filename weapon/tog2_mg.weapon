@@ -11,11 +11,11 @@
     can_shoot_standing="0" 
     can_shoot_crouching="0" 
     suppressed="0" 
-    name="TOG II Tank MG" 
+    name="TOG II Besa MG" 
     class="0" 
     projectile_speed="90.0" />
 
-	<sound key="fire" fileref="mg_03_m1919.wav" pitch_variety="0.05" volume="1.4"/>
+	<sound key="fire" fileref="weapon_mg_mg26t.wav" pitch_variety="0.05" volume="1.55"/>
 
 	<!-- Scoring for target priority. Distance is between 0 and 1 based on range; direction is between 0 and 1 based on whether its near the barrel; squad_command is between 0 and on based on how close to the player's command order is, and base_score is a weight.. -->
 	<!-- These all add together and the highest 'score' is the new target, targets are rescanned every 2.5 seconds to see if a new higher-score target is in sight-range. -->

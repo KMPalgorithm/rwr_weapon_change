@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<weapon file="base_primary_lmg_crouch_fire.weapon" key="mg42_assault.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="0.35" drop_count_factor_on_player_death ="1.0" player_death_drop_owner_lock_time="30.0" >
+<weapon file="base_primary_lmg_crouch_fire.weapon" key="mg42_assault.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="1.0" drop_count_factor_on_player_death ="1.0" player_death_drop_owner_lock_time="30.0" >
 	
 <access_tag name="edelweiss" />
 
@@ -16,7 +16,7 @@
 	name="MG 42 - Mobile" 
 	class="0" 
 	barrel_offset="0.7" 
-	projectile_speed="93.0"
+	projectile_speed="95.0"
 	/>
 		
  	<animation state_key="recoil" animation_key="recoil1, hip fire" />
@@ -28,6 +28,7 @@
 	<animation state_key="hold" animation_key="hold, lmg" />
 	<animation state_key="crouching" animation_key="crouch, hold, hip fire" />
 	<animation state_key="crouch_moving" animation_key="crouching forwards, hip fire" />
+    <animation state_key="crouch_moving_backwards" 	animation_key="crouching backwards, hip fire" />
 	<animation state_key="hold_on_wall" animation_key="hold, lmg" />
     	<animation state_key="still_against_wall" 	animation_key="hold, lmg" />
 	<animation state_key="walking" animation_key="walking, hip fire" /> 
@@ -54,7 +55,7 @@
 	<model filename="weapon_mg42_assault.xml" />
 	<hud_icon filename="hud_mg42_assault.png" />
 	
-	<commonness value="0.05" can_respawn_with="0"/>
+	<commonness value="0.085" can_respawn_with="0"/>
 	<inventory encumbrance="11.0" price="1200.0" />
 	
 	<capacity value="0" source="rank" source_value="0.0" />
@@ -63,10 +64,10 @@
 	<projectile file="bullet.projectile">
 	    <result
 		class="hit"
-		kill_probability="0.55"
-		kill_decay_start_time="0.65"
-		kill_decay_end_time="0.86"
+		kill_probability="0.6"
+		kill_decay_start_time="0.42"
+		kill_decay_end_time="0.84"
 		/>
 	</projectile>
-	<modifier class="speed" value="-0.25" /> 
+	<modifier class="speed" value="-0.2" /> 
 </weapon>

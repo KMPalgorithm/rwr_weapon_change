@@ -2,7 +2,7 @@
 <projectile class="bullet" name="type 97 at rifle" slot="1" time_to_live="0.5" radius="2.0" pulldown_in_air="0.5">
 	<tag name="at rifle"/>
 	
-	<sound class="result" key="other" fileref="ricochet_b1.wav" />
+	<sound class="result" key="other" fileref="ricochet_b1.wav" pitch_variety="0.05" volume="2.5"/>
 	<sound class="result" key="terrain" copy="other" />
 	<sound class="result" key="vehicle" copy="other" />
 	<sound class="result" key="static_object" copy="other" />
@@ -11,7 +11,7 @@
 	<result
 	class="blast"
 	radius="2"
-	damage="3.0"
+	damage="1.8"
 	push="0.5"
 	decal="0"
 	/>
@@ -20,20 +20,24 @@
 	
 	<rotation class="motion" />
 	
-	<effect class="result" key="other" ref="Burst" use_surface_color="1" />
-	<effect class="result" key="other" ref="LowDust"/>
-	
-	<effect class="result" key="terrain" ref="Burst" use_surface_color="1" />
-	<effect class="result" key="terrain" ref="LowDust" />
-	<effect class="result" type="splat_map" surface_tag="" size="1.0" atlas_index="0" layer="1" />
-	<effect class="result" type="splat_map" surface_tag="" size="1.0" atlas_index="4" layer="0" />
-	
-	<effect class="result" key="vehicle" ref="Burst" use_surface_color="1" />
-	<effect class="result" key="vehicle" ref="LowDust" />
-	<effect class="result" key="static_object" ref="Burst" use_surface_color="1" />
-	<effect class="result" key="static_object" ref="LowDust" />
+   	<effect class="result" key="terrain" ref="OstvetSmokeBigSphere" />
+   	<effect class="result" key="terrain" ref="OstvetHitSparks" />
+    <effect class="result" key="terrain" ref="OstvetBurstShine" lighting="0" />
+
+   	<effect class="result" key="character" ref="OstvetSmokeBigSphere" />
+   	<effect class="result" key="character" ref="OstvetHitSparks" />
     <effect class="result" key="character" ref="BloodSplat50Cal" lighting="1" />
     <effect class="result" key="character" ref="BurstShine50Cal" lighting="1" post_processing="0" />
+    <effect class="result" key="character" ref="OstvetBurstShine" lighting="0" />
+	
+    <effect class="result" key="static_object" copy="terrain" />
+    <effect class="result" key="vehicle" copy="terrain" />
+    <effect class="result" key="shield" copy="terrain" />
+    <effect class="result" key="other" copy="terrain" />
+		
+    <effect class="result" type="splat_map" surface_tag="" size="2.0" atlas_index="0" layer="1" />
+    <effect class="result" type="splat_map" surface_tag="" size="4.0" atlas_index="4" layer="0" />
+    <effect class="result" type="splat_map" surface_tag="" size="5.0" atlas_index="0" layer="2" additive="0" /> <!-- remove top snow everywhere -->
 	
 	<trail probability="1.0" />
 	

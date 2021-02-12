@@ -33,23 +33,22 @@
 	<!-- These all add together and the highest 'score' is the new target, targets are rescanned every 2.5 seconds to see if a new higher-score target is in sight-range. -->
 	<!-- You must define a blank tag at the top of the list to handle all cases where the vehicle is fighting something "undefined", which is what common infantry might best fit under. -->
     <target_factors tag="" distance="1.0" direction="0.0" squad_command="1.0" base_score="0.5" />
-    <target_factors tag="bazooka" distance="1.0" direction="0.0" squad_command="1.0" base_score="2.0" />		<!-- Enemy AT Soldiers are priority for this MG -->
+    <target_factors tag="defensive_weapon" distance="1.0" direction="0.0" squad_command="1.0" base_score="2.0" />
+    <target_factors tag="bazooka" distance="1.0" direction="0.0" squad_command="1.0" base_score="3.0" />		<!-- Enemy AT Soldiers are priority for this MG -->
+    <target_factors tag="light_armour" distance="1.0" direction="0.0" squad_command="1.0" base_score="4.0" />
+    <target_factors tag="light_vehicle" distance="1.0" direction="0.0" squad_command="1.0" base_score="4.0" />
+    <target_factors tag="light_at_gun" distance="1.0" direction="0.0" squad_command="1.0" base_score="5.0" />
+    <target_factors tag="at_gun" distance="1.0" direction="0.0" squad_command="1.0" base_score="6.0" />
 
 	<sound class="operation" key="fire" fileref="mg_12_type93.wav" pitch_variety="0.05" volume="1.8"/>
 	
 	<model mesh_filename="" texture_filename="" />
-	<hud_icon filename="hud_tank_mg.png" />
+	<hud_icon filename="hud_aa_gun.png" />
 	
 	<inventory encumbrance="11.0" price="2.0" />
 	<commonness value="0.0" />
 	
-	<projectile file="bullet.projectile">
-        <result
-		class="hit"
-		kill_probability="0.85"
-		kill_decay_start_time="0.45"
-		kill_decay_end_time="0.70"
-		/>
+	<projectile file="katsu_bullet.projectile">
 	</projectile>
 	
 	<shield offset="0.9 -0.6 0" extent="0.5 1.0 0.5" />

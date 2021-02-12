@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<weapon file="base_primary_carbine_smg.weapon" key="m2_hyde.weapon">
+<weapon file="base_primary_carbine_smg.weapon" key="m2_hyde.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="1.0" player_death_drop_owner_lock_time="30.0">
 
 	<access_tag name="edelweiss" />
 
@@ -24,7 +24,7 @@
 	
 	<weak_hand_hold offset="0.2" />
 	
-	<sound key="fire" fileref="weapon_smg_m2_hyde.wav" pitch_variety="0.05" volume="1.88"/>	<!-- was 1.9 with old sound -->
+	<sound key="fire" fileref="weapon_smg_m2_hyde.wav" pitch_variety="0.05" volume="1.94"/>	<!-- was 1.9 with old sound -->
 	<sound key="magazine_out" fileref="rifle_clip_out.wav" />
 	<sound key="magazine_in" fileref="rifle_clip_in.wav" />
 	<sound key="cycle" fileref="rifle_chamber.wav" />

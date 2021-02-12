@@ -46,7 +46,7 @@
     <sound key="cycle" fileref="rifle_chamber.wav" />
     <model filename="king_tiger_20mm_gun.mesh" texture_filename="king_tiger_elite.png"  />
 
-    <hud_icon filename="hud_tank_mg.png" />
+    <hud_icon filename="hud_oerlikon.png" />
     <commonness value="0.05" />
     <inventory encumbrance="11.0" price="2.0" />
 

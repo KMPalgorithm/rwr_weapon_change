@@ -34,7 +34,7 @@
 	<sound key="fire" fileref="weapon_mg_bren.wav" pitch_variety="0.05" volume="1.63"/>
 	
 	<model mesh_filename="" texture_filename="" />
-	<hud_icon filename="hud_tank_mg.png" />
+	<hud_icon filename="hud_bren_mkii.png" />
 	
 	<inventory encumbrance="11.0" price="2.0" />
 	<commonness value="0.0" />

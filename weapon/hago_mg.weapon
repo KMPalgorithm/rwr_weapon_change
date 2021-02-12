@@ -31,7 +31,7 @@
 	<sound key="fire" fileref="mg_06_type_11.wav" pitch_variety="0.05" volume="1.22"/>
 	
     <model filename="" />
-	<hud_icon filename="hud_tank_mg.png" />
+	<hud_icon filename="hud_type96_lmg_trench.png" />
 	
 	<commonness value="0.0" />
 	

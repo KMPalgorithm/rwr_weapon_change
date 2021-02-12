@@ -17,8 +17,6 @@
 	barrel_offset="0.5" 
 	projectile_speed="91.0"
 	/>
-	
-	<!-- former stats: grow_step 0.195 crouching accuracy 0.68-->
 
 	<!-- BAR is a low-capacity, low-rate of fire weapon which offers high accuracy and moderate damage. -->
 	<!-- The Lightweight version has a few things removed such as the bipod, flash hider, and stock rest to provide a more mobile platform; this was commonly done in the Pacific theatre. -->
@@ -58,7 +56,7 @@
 		class="hit"
 		kill_probability="0.575"
 		kill_decay_start_time="0.225"
-		kill_decay_end_time="0.55"
+		kill_decay_end_time="0.84"
 		/>
 	</projectile>
 	

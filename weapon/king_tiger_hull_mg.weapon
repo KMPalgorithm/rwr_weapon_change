@@ -45,7 +45,7 @@
     <sound key="cycle" fileref="rifle_chamber.wav" />
     <model filename="" />
 
-    <hud_icon filename="hud_tank_mg.png" />
+    <hud_icon filename="hud_mg34_assault.png" />
     <commonness value="0.05" />
 
     <weak_hand_hold offset="0.4" />

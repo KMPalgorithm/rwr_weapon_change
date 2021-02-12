@@ -25,7 +25,7 @@
 	<sound class="operation" key="fire" fileref="oerlikon_20mm.wav" pitch_variety="0.05" volume="1.8"/>
 	
 	<model mesh_filename="" texture_filename="" />
-	<hud_icon filename="hud_tank_mg.png" />
+	<hud_icon filename="hud_oerlikon.png" />
 	
 	<commonness value="0.0" />
 	

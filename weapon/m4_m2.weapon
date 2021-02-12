@@ -37,7 +37,7 @@
 
 	<model mesh_filename="m4_75_cupola_mg.mesh" texture_filename="m4_75.png" />
 
-    <hud_icon filename="hud_tank_mg.png" />
+    <hud_icon filename="hud_pt_boat_mg.png" />
     <commonness value="0.05" />
     <inventory encumbrance="11.0" price="2.0" />
 

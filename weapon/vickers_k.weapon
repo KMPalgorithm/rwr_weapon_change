@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<weapon file="base_primary_lmg_crouch_fire.weapon" key="vickers_k.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="0.4" drop_count_factor_on_player_death ="1.0" player_death_drop_owner_lock_time="45.0" >
+<weapon file="base_primary_lmg_crouch_fire.weapon" key="vickers_k.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="1.0" drop_count_factor_on_player_death ="1.0" player_death_drop_owner_lock_time="45.0" >
 	
 <access_tag name="edelweiss" />
 
 	<specification 
 	retrigger_time="0.063" 
-	accuracy_factor="0.63"
+	accuracy_factor="0.65"
   	spread_range="0.225"
 	sustained_fire_grow_step="0.215"
-	sustained_fire_diminish_rate="1.5"
-	stance_accuracy_rate="0.65"	
+	sustained_fire_diminish_rate="1.8"
+	stance_accuracy_rate="0.75"	
 	magazine_size="100" 
   	can_shoot_standing="1" 
   	can_shoot_crouching="1" 
@@ -17,13 +17,15 @@
 	name="VGO No.2 Mk I - Mobile" 
 	class="0" 
 	barrel_offset="0.8" 
-	projectile_speed="90.0"
+	projectile_speed="100.0"
 	/>
 		
+	<!-- former stats: velocity 90 -->
+
 	<!-- Vickers K / GO variation for land service. -->
 	<!-- High rate of fire and large drum. -->
 	<!-- This is a quite versatile machine gun in that it has powerful hip fire and powerful bipod fire. -->
-	<!-- To make up for it, and the fact it has a short barrel, velocity is low.-->
+	<!-- To make up for it, and the fact it has a short barrel, velocity is somewhat low.-->
 
  	<animation state_key="recoil" animation_key="recoil1, hip fire" />
  	<animation state_key="recoil" animation_key="recoil2, hip fire" />
@@ -31,10 +33,10 @@
 	<animation key="recoil" stance_key="over_wall" ref="12" />
 	<animation key="recoil" stance_key="over_wall" ref="13" />
 	<animation key="recoil" stance_key="over_wall" ref="14" />
-   	 <animation state_key="still"	animation_key="hold, lmg" />
 	<animation state_key="hold" animation_key="hold, lmg" />
 	<animation state_key="crouching" animation_key="crouch, hold, hip fire" />
 	<animation state_key="crouch_moving" animation_key="crouching forwards, hip fire" />
+    <animation state_key="crouch_moving_backwards" 	animation_key="crouching backwards, hip fire" />
 	<animation state_key="hold_on_wall" animation_key="hold, lmg" />
     	<animation state_key="still_against_wall" 	animation_key="hold, lmg" />
 	<animation state_key="walking" animation_key="walking, hip fire" /> 
@@ -64,7 +66,7 @@
 	<model filename="weapon_vickers_k_go_no2_mki.xml" />
 	<hud_icon filename="hud_vickers_k.png" />
 	
-	<commonness value="0.1" can_respawn_with="0"/>
+	<commonness value="0.09" can_respawn_with="0"/>
 	<inventory encumbrance="11.0" price="900.0" />
 	
 	<capacity value="0" source="rank" source_value="0.0" />
@@ -73,10 +75,10 @@
 	<projectile file="bullet.projectile">
 	    <result
 		class="hit"
-		kill_probability="0.5"
+		kill_probability="0.6"
 		kill_decay_start_time="0.6"
 		kill_decay_end_time="0.89"
 		/>
 	</projectile>
-	<modifier class="speed" value="-0.25" /> 
+	<modifier class="speed" value="-0.2" /> 
 </weapon>

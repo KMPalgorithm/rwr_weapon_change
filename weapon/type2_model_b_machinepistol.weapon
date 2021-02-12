@@ -13,8 +13,10 @@
 	name="Type 2 SMG" 
 	class="0" 
 	barrel_offset="-0.1" 
-	projectile_speed="95.0"
+	projectile_speed="105.0"
 	/>
+
+	<!-- former stats: velocity 95 -->
 
 	<!-- formerly known as Type 2 Model B, more sources pointed towards the nomenclature Type 2 -->
 	

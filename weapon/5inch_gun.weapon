@@ -35,7 +35,7 @@
 
 	
     <model mesh_filename="5inch_gun_gun.mesh" texture_filename="5inch_gun.png" />
-    <hud_icon filename="hud_type92_hmg.png" />
+    <hud_icon filename="hud_5_inch_gun.png" />
 	
     <commonness value="0.0" />
 

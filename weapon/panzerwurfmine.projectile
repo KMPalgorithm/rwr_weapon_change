@@ -13,7 +13,12 @@
 	<!-- unlike most AT grenades, the Panzerwurfmine uses an impact detonation instead of timed, but has a smaller radius -->
 	<!-- this is primarily to balance it weaker against Infantry, but not having an impact on its performance against tanks. -->
 	
-    <trigger class="impact" />
+	<trigger class="impact"> 
+		<collider class="terrain" enabled="1" /> 
+		<collider class="static_object" enabled="1" /> 
+		<collider class="vehicle" enabled="1" /> 
+		<collider class="character" enabled="1" />
+	</trigger>
 	<result
 	class="blast"
 	radius="2.35"

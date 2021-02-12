@@ -34,7 +34,7 @@
 
     <model filename="" />
 
-    <hud_icon filename="hud_tank_mg.png" />
+    <hud_icon filename="hud_m1919_hmg.png" />
     <commonness value="0.05" />
     <inventory encumbrance="11.0" price="2.0" />
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<weapon file="base_primary_sniper.weapon" key="gew98_s.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="0.5" drop_count_factor_on_player_death ="1.0" player_death_drop_owner_lock_time="45.0">
+<weapon file="base_primary_sniper.weapon" key="gew98_s.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="1.0" drop_count_factor_on_player_death ="1.0" player_death_drop_owner_lock_time="45.0">
     <tag name="sniper" />
 	
 <access_tag name="edelweiss" />
@@ -38,7 +38,7 @@
 	<weak_hand_hold offset="0.3" />
 
 	<sound key="fire" fileref="weapon_rifle_gew98.wav" pitch_variety="0.05" volume="2.6"/>
-	<sound key="magazine_in" fileref="sniper_clip_in.wav" />
+    <sound key="reload_one" fileref="park_off.wav" />
 	<sound key="cycle_out" fileref="sniper_cycle_out.wav" />
 	<sound key="cycle_in" fileref="sniper_cycle_in.wav" />
 	
@@ -56,7 +56,7 @@
 		<result
 		class="hit"
 		kill_probability="2.25"
-		kill_decay_start_time="0.5"
+		kill_decay_start_time="0.7"
 		kill_decay_end_time="0.71"
 		/>
 	</projectile>

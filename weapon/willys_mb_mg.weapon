@@ -43,7 +43,7 @@
     <sound key="cycle" fileref="rifle_chamber.wav" />
     <model filename="willys_mb_mg.mesh" texture_filename="willys_mb.png" />
 
-    <hud_icon filename="hud_tank_mg.png" />
+    <hud_icon filename="hud_pt_boat_mg.png" />
     <commonness value="0.05" />
     <inventory encumbrance="11.0" price="2.0" />
 

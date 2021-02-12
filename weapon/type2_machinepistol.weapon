@@ -17,6 +17,8 @@
 	projectile_speed="95.0"
 	/>
 
+	<!-- former stats: kill chance 0.47, kill start decay 0.23 -->
+
 	<!-- formerly known as Type 2 Model A, more sources pointed towards the nomenclature Type 1 -->
 	
 	<animation key="recoil" ref="12" />
@@ -43,8 +45,8 @@
 	<projectile file="bullet.projectile">
 		<result
 		class="hit"
-		kill_probability="0.47"
-		kill_decay_start_time="0.25"
+		kill_probability="0.5"
+		kill_decay_start_time="0.27"
 		kill_decay_end_time="0.53"
 		/>
 	</projectile>

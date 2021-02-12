@@ -24,7 +24,7 @@
 	<next_in_chain key="type_i_rifle.weapon" share_ammo="1" />
 	<stance state_key="standing" accuracy="0.85" />
 	<stance state_key="crouching" accuracy="0.875" />
-	<stance state_key="over_wall" accuracy="0.97" />
+	<!--<stance state_key="over_wall" accuracy="0.97" />-->
 
 	<!-- The Type "I" Carcano was a Japanese-contracted weapon built in Italy, issued primarily to their Naval Troops. -->
 	<!-- It is nearly identital to the Type 38, but uses the Carcano action instead. -->

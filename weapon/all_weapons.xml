@@ -83,18 +83,10 @@
 
 	
 	<!-- German Wehrmacht -->
-	<weapon file="kar98k.weapon">
-		<capacity source="rank" source_value="0.0" value="1" />
-		<next_in_chain key="kar98k_b.weapon" share_ammo="1" />
-		<animation state_key="next_in_chain_in" animation_key="sheath bayonet part 2" />
-		<animation state_key="next_in_chain_out" animation_key="mount bayonet part 1" />
-	</weapon>
-	<weapon file="kar98k_b.weapon">
-		<capacity source="rank" source_value="0.0" value="1" />
-		<next_in_chain key="kar98k.weapon" share_ammo="1" />
-		<animation state_key="next_in_chain_in" animation_key="mount bayonet part 2" />
-		<animation state_key="next_in_chain_out" animation_key="sheath bayonet part 1" />
-	</weapon>
+	<weapon file="kar98k.weapon" />
+	<weapon file="kar98k_b.weapon" />
+	<weapon file="kar98k_ai.weapon" />
+	<weapon file="kar98k_b_ai.weapon" />
 	
 	<weapon file="kar98k_small_optic.weapon">
 		<capacity source="rank" source_value="0.0" value="0" />
@@ -333,6 +325,15 @@
 		<animation state_key="next_in_chain_out" animation_key="sheath bayonet part 1" />
 	</weapon>
 
+	<!-- AI rifles don't need bayonet toggle -->
+	<weapon file="smle_no4_mki_ai.weapon">
+		<capacity source="rank" source_value="0.0" value="1" />
+	</weapon>
+	<weapon file="smle_no4_mki_b_ai.weapon">
+		<capacity source="rank" source_value="0.0" value="1" />
+	</weapon>
+
+
 	<weapon file="smle_no4_mki_s.weapon">
 		<capacity source="rank" source_value="0.0" value="0" />
 		<capacity source="rank" source_value="0.2" value="1" />
@@ -526,6 +527,15 @@
 		<animation state_key="next_in_chain_out" animation_key="sheath bayonet part 1" />
 	</weapon>
 
+
+	<!-- AI rifles don't need bayonet toggle -->
+	<weapon file="m1903_rifle_ai.weapon">
+		<capacity source="rank" source_value="0.0" value="1" />
+	</weapon>
+	<weapon file="m1903_rifle_b_ai.weapon">
+		<capacity source="rank" source_value="0.0" value="1" />
+	</weapon>
+
 	<weapon file="m1_garand.weapon">
 		<capacity source="rank" source_value="0.0" value="1" />
 		<next_in_chain key="m1_garand_b.weapon" share_ammo="1" />
@@ -555,6 +565,14 @@
 	<weapon file="m1941_johnson_rifle.weapon">
 		<capacity source="rank" source_value="0.0" value="0" />
 		<capacity source="rank" source_value="0.8" value="1" />
+	</weapon>
+
+	<!-- AI rifles don't need bayonet toggle -->
+	<weapon file="m1_garand_ai.weapon">
+		<capacity source="rank" source_value="0.0" value="1" />
+	</weapon>
+	<weapon file="m1_garand_b_ai.weapon">
+		<capacity source="rank" source_value="0.0" value="1" />
 	</weapon>
 
 
@@ -753,6 +771,28 @@
 	</weapon>
 
 
+	<!-- AI rifles don't need bayonet toggle -->
+	<weapon file="type38_rifle_ai.weapon">
+		<capacity source="rank" source_value="0.0" value="1" />
+	</weapon>
+	<weapon file="type38_rifle_b_ai.weapon">
+		<capacity source="rank" source_value="0.0" value="1" />
+	</weapon>
+	
+	<weapon file="type_i_rifle_ai.weapon">
+		<capacity source="rank" source_value="0.0" value="1" />
+	</weapon>
+	<weapon file="type_i_rifle_b_ai.weapon">
+		<capacity source="rank" source_value="0.0" value="1" />
+	</weapon>
+	
+	<weapon file="type99_rifle_ai.weapon">
+		<capacity source="rank" source_value="0.0" value="1" />
+	</weapon>
+	<weapon file="type99_rifle_b_ai.weapon">
+		<capacity source="rank" source_value="0.0" value="1" />
+	</weapon>
+
 	<weapon file="type44_carbine.weapon">
 		<capacity source="rank" source_value="0.0" value="0" />
 		<capacity source="rank" source_value="0.2" value="1" />
@@ -760,6 +800,11 @@
 	<weapon file="type4_garand.weapon">
 		<capacity source="rank" source_value="0.0" value="0" />
 		<capacity source="rank" source_value="0.3" value="1" />
+	</weapon>
+
+	<weapon file="type44_carbine_ai.weapon">
+		<capacity source="rank" source_value="0.0" value="0" />
+		<capacity source="rank" source_value="0.2" value="1" />
 	</weapon>
 	
 	<weapon file="type99_rifle_elite.weapon">

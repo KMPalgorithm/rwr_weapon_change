@@ -34,7 +34,7 @@
 	<sound class="operation" key="fire" fileref="antiair_autocannon.wav" pitch_variety="0.05" volume="2.0"/>
 	
 	<model mesh_filename="" texture_filename="" />
-	<hud_icon filename="hud_type92_hmg.png" />
+	<hud_icon filename="hud_bofors_gun.png" />
 	
 	<commonness value="0.0" />
 	

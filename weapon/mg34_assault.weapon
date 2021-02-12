@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<weapon file="base_primary_lmg_crouch_fire.weapon" key="mg34_assault.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="0.45" drop_count_factor_on_player_death="1.0" player_death_drop_owner_lock_time="45.0" >
+<weapon file="base_primary_lmg_crouch_fire.weapon" key="mg34_assault.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="0.4" drop_count_factor_on_player_death="1.0" player_death_drop_owner_lock_time="45.0" >
 	
 <access_tag name="edelweiss" />
 
 	<specification 
 	retrigger_time="0.0775" 
-	accuracy_factor="0.61" 
+	accuracy_factor="0.6" 
   	spread_range="0.16"
     	sustained_fire_grow_step="1.0" 
     	sustained_fire_diminish_rate="3.0" 
@@ -16,7 +16,7 @@
 	name="MG 34 - Mobile" 
 	class="0" 
 	barrel_offset="0.85" 
-	projectile_speed="125.0"
+	projectile_speed="115.0"
 	/>
 	
 	<stance state_key="running" accuracy="0.3" />
@@ -35,6 +35,7 @@
 	<animation state_key="hold" animation_key="hold, lmg" />
 	<animation state_key="crouching" animation_key="crouch, hold, hip fire" />
 	<animation state_key="crouch_moving" animation_key="crouching forwards, hip fire" />
+    <animation state_key="crouch_moving_backwards" 	animation_key="crouching backwards, hip fire" />
 	<animation state_key="hold_on_wall" animation_key="hold, lmg" />
     	<animation state_key="still_against_wall" 	animation_key="hold, lmg" />
 	<animation state_key="walking" animation_key="walking, hip fire" /> 
@@ -55,7 +56,7 @@
 	<hud_icon filename="hud_mg34_assault.png" />
 	
 	<commonness value="0.1" can_respawn_with="0" />
-	<inventory encumbrance="11.0" price="750.0" />
+	<inventory encumbrance="11.0" price="600.0" />
 	
 	<capacity value="0" source="rank" source_value="0.0" />
 	<capacity value="1" source="rank" source_value="0.0" />
@@ -64,11 +65,11 @@
 		<result
 		class="hit"
 		kill_probability="0.5"
-		kill_decay_start_time="0.35"
-		kill_decay_end_time="0.64"
+		kill_decay_start_time="0.38"
+		kill_decay_end_time="0.7"
 		/>
 	</projectile>
 	
-	<modifier class="speed" value="-0.25" /> 
+	<modifier class="speed" value="-0.2" /> 
 
 </weapon>

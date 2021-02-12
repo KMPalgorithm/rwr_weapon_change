@@ -20,8 +20,10 @@
 	burst_shots="1" 
 	slot="1"
 	/>
+
+	<!-- former stats: kill chance 0.8 -->
 	
-	<!-- special Officer-only Nambu pistol, engraved. -->
+	<!-- special Officer-only Luger pistol, engraved. -->
 	<!-- since its kept in pristine condition, it is more reliable; more accurate and cycling its action quicker. -->
 	<!-- however the difference is very minimal. Its largest significance is that it is worth a LOT of rp to sell! -->
 	
@@ -44,7 +46,7 @@
 	<projectile file="bullet.projectile">
 		<result
 		class="hit"
-		kill_probability="0.8"
+		kill_probability="0.85"
 		kill_decay_start_time="0.25"
 		kill_decay_end_time="0.53"
 		/>

@@ -35,7 +35,7 @@
 	<!-- the Kar43 is one of the rare weapons that has a unique sound for its sniper variant, since the 3D model is very hard to tell apart when held by a soldier. -->
 	<sound key="fire" fileref="weapon_rifle_kar43_sniper.wav" pitch_variety="0.05" volume="1.83"/>
     	<sound key="reload_one" fileref="park_off.wav" />
-	<sound key="magazine_out" fileref="type4_garand_clip_out.wav" />
+	<sound key="magazine_out" fileref="rifle_clip_out.wav" />
 	<sound key="magazine_in" fileref="rifle_clip_in.wav" />
 	<sound key="cycle" fileref="rifle_chamber.wav" />
 	
@@ -51,7 +51,7 @@
 	<projectile file="bullet.projectile">
 		<result 
 		class="hit" 
-		kill_probability="1.0" 
+		kill_probability="1.125" 
 		kill_decay_start_time="0.6" 
 		kill_decay_end_time="0.91"
 		/>

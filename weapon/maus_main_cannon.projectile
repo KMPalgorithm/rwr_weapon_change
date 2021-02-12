@@ -10,11 +10,12 @@
 	<sound class="result" key="vehicle" copy="other" />
 	<sound class="result" key="character" copy="other" />
 	
+	<!-- damage was 6.9 -->
     <trigger class="impact" />
     <result 
 	class="blast" 
 	radius="8.5" 
-	damage="6.9" 
+	damage="9.3" 
 	push="1.0" 
 	decal="1" 
         damage_origin_vehicle="0" 

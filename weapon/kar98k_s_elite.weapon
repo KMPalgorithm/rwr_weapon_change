@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<weapon file="base_primary_sniper.weapon" key="kar98k_s_elite.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="0.75" drop_count_factor_on_player_death ="1.0" player_death_drop_owner_lock_time="45.0">
+<weapon file="base_primary_sniper.weapon" key="kar98k_s_elite.weapon" time_to_live_out_in_the_open="90.0" drop_count_factor_on_death="1.0" drop_count_factor_on_player_death ="1.0" player_death_drop_owner_lock_time="45.0">
     <tag name="sniper" />
 	
 <access_tag name="edelweiss" />
@@ -7,14 +7,14 @@
 	<specification 
 	retrigger_time="-1.0" 
 	accuracy_factor="0.995" 
-	sustained_fire_grow_step="3.0" 
+	sustained_fire_grow_step="3.5" 
 	magazine_size="5" 
 	can_shoot_standing="1" 
 	suppressed="0" 
 	name="Scoped Karabiner 98k - Hi-Grade" 
 	class="2" 
 	reload_one_at_a_time="1" 
-	projectile_speed="145.0" 
+	projectile_speed="140.0" 
 	barrel_offset="0.5" 
 	projectiles_per_shot="1"
 	sight_range_modifier="2.3"
@@ -49,8 +49,8 @@
 		<result
 		class="hit"
 		kill_probability="2.25"
-		kill_decay_start_time="0.68"
-		kill_decay_end_time="0.69"
+		kill_decay_start_time="0.7"
+		kill_decay_end_time="0.71"
 		/>
 	</projectile>
 	

@@ -19,6 +19,8 @@
 	slot="1"
 	/>
 
+	<!-- former stats: kill chance 0.8 -->
+
 	<!-- the Browning Hi-Power is all around a great pistol, with its 9mm cartridge and good capacity. -->
 	<!-- compared to the Luger P08, it holds 5 extra rounds in its magazine, but has shorter start time to damage drop-off and lower velocity, as well as slower maximum rate of fire.-->
 	
@@ -41,7 +43,7 @@
 	<projectile file="bullet.projectile">
 		<result
 		class="hit"
-		kill_probability="0.8"
+		kill_probability="0.85"
 		kill_decay_start_time="0.2"
 		kill_decay_end_time="0.55"
 		/>

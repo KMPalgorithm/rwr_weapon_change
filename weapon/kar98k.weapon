@@ -5,25 +5,27 @@
 	<specification 
 	retrigger_time="-1.0" 
 	accuracy_factor="0.99" 
-	sustained_fire_grow_step="3.5" 
+	sustained_fire_grow_step="4.0" 
 	magazine_size="5" 
 	can_shoot_standing="1" 
 	suppressed="0" 
 	name="Karabiner 98k" 
 	class="2" 
 	reload_one_at_a_time="0" 
-	projectile_speed="145.0" 
+	projectile_speed="135.0" 
 	barrel_offset="0.5" 
 	projectiles_per_shot="1"
 	sight_range_modifier="1.1"
 	/>
 
 	<next_in_chain key="kar98k_b.weapon" share_ammo="1" />
+	<animation state_key="next_in_chain_in" animation_key="sheath bayonet part 2" />
+	<animation state_key="next_in_chain_out" animation_key="mount bayonet part 1" />
 
 	<!--<addon_model filename="backpack_small.xml" />-->
 
-	<stance state_key="standing" accuracy="0.9" />
-	<stance state_key="crouching" accuracy="0.975" />
+	<stance state_key="standing" accuracy="0.89" />		<!-- was 0.9 -->
+	<stance state_key="crouching" accuracy="0.97" />	<!-- was 0.975 -->
 		
 	<animation key="recoil" ref="27" />
 	<animation key="cycle" animation_key="bolt cycle" />
@@ -50,9 +52,9 @@
 	<projectile file="bullet.projectile">
 		<result
 		class="hit"
-		kill_probability="1.0"
-		kill_decay_start_time="0.54"
-		kill_decay_end_time="0.55"
+		kill_probability="1.125"
+		kill_decay_start_time="0.59"
+		kill_decay_end_time="0.6"
 		/>
 	</projectile>
 	
